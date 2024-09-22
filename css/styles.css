@@ -597,6 +597,7 @@ progress {
 
 .list-inline-item {
   display: inline-block;
+  width: 3rem;
 }
 .list-inline-item:not(:last-child) {
   margin-right: 0.5rem;

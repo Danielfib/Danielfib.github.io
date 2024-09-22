@@ -171,7 +171,6 @@ p {
 }
 
 .downloadcv-anchor {
-  display: inline-flex;
   align-items: center;
   justify-content: center;
   height: 3.5rem;
@@ -180,6 +179,7 @@ p {
   border-radius: 100%;
   font-size: 1.5rem;
   margin-right: 1.5rem;
+  vertical-align: middle;
 }
 .downloadcv {
   align-items: center;
@@ -194,6 +194,7 @@ p {
   text-align: center;
   border: none;
   outline: none;
+  vertical-align: middle;
 }
 
 abbr[title] {
@@ -10949,6 +10950,7 @@ p.lead {
   }
 }
 .social-icons .social-icon {
+  vertical-align: middle;
   display: inline-flex;
   align-items: center;
   justify-content: center;

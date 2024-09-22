@@ -174,13 +174,13 @@ p {
   align-items: center;
   justify-content: center;
   height: 3.5rem;
-  background-color: #495057;
   color: #fff;
   border-radius: 100%;
   font-size: 1.5rem;
   margin-right: 1.5rem;
   vertical-align: middle;
 }
+
 .downloadcv {
   align-items: center;
   justify-content: center;
@@ -195,6 +195,9 @@ p {
   border: none;
   outline: none;
   vertical-align: middle;
+}
+.downloadcv:hover {
+  background-color: #bd5d38;
 }
 
 abbr[title] {

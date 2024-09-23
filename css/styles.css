@@ -200,6 +200,25 @@ p {
   background-color: #198754;
 }
 
+.project-card-btn {
+  align-items: center;
+  justify-content: center;
+  height: 2rem;
+  width: 6rem;
+  background-color: #495057;
+  color: #fff;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  border-color: #495057;
+  text-align: center;
+  border: none;
+  outline: none;
+  vertical-align: middle;
+}
+.project-card-btn:hover {
+  background-color: #198754;
+}
+
 abbr[title] {
   -webkit-text-decoration: underline dotted;
           text-decoration: underline dotted;

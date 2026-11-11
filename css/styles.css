@@ -170,17 +170,6 @@ p {
   margin-bottom: 1rem;
 }
 
-.downloadcv-anchor {
-  align-items: center;
-  justify-content: center;
-  height: 3.5rem;
-  color: #fff;
-  border-radius: 100%;
-  font-size: 1.5rem;
-  margin-right: 1.5rem;
-  vertical-align: middle;
-}
-
 .downloadcv {
   align-items: center;
   justify-content: center;
@@ -11009,7 +10998,7 @@ section.resume-section .resume-section-content {
 }
 
 @media (min-width: 768px) {
-  section.resume-section {
+  #about.resume-section {
     min-height: 100vh;
   }
 }
@@ -11019,5 +11008,91 @@ section.resume-section .resume-section-content {
     padding-right: 3rem;
     padding-top: 5rem;
     padding-bottom: 5rem;
+  }
+}
+/* Compact portfolio layout */
+.social-icons {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+}
+.social-icons .social-icon {
+  margin-right: 0;
+  flex-shrink: 0;
+}
+.downloadcv,
+.project-card-btn {
+  display: inline-flex;
+  text-decoration: none;
+}
+.downloadcv:hover,
+.project-card-btn:hover {
+  color: #fff;
+}
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid #198754;
+  outline-offset: 4px;
+}
+.project-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1rem;
+}
+.project-grid .card-img-top {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+.project-grid .card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.project-grid .card-title {
+  font-size: 1.25rem;
+}
+.project-grid .project-card-btn {
+  margin-top: auto;
+}
+.dev-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 0;
+  margin-bottom: 1.5rem;
+}
+.dev-icons .list-inline-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+  margin: 0;
+  min-width: 3.25rem;
+  font-size: 0.75rem;
+}
+.dev-icons img {
+  width: 2rem;
+  height: 2rem;
+  object-fit: contain;
+}
+.workflow-list {
+  padding-left: 1.25rem;
+}
+.workflow-list li + li {
+  margin-top: 0.5rem;
+}
+#about .subheading {
+  overflow-wrap: anywhere;
+}
+@media (min-width: 576px) {
+  .project-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (min-width: 1200px) {
+  .project-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
